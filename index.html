@@ -12,14 +12,15 @@
   <button>click</button>
 </body>
 <script>
+  let correct = document.querySelector('input')
+  let news = correct.value
+  let btn = document.querySelector('button').addEventListener(() => {
+    let diva = document.createElement('p')
+    diva.textContent = news
 
-  document.querySelector('button').addEventListener('click', function () {
-    let input = document.querySelector('input');
-    let news = input.value;
-    let p = document.createElement('p');
-    p.textContent = news;
-    document.body.appendChild(p);
-  });
+  })
+
+
 </script>
 
 </html>
